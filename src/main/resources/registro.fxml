@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="co.edu.uniquindio.banco.controlador.RegistroControlador"
+      prefHeight="400.0" prefWidth="400.0" alignment="center" spacing="30.0" >
+
+    <Label text="Crear nueva cuenta" >
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+
+    <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+        <Label text="Número de identificación:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="txtIdentificacion" GridPane.columnIndex="1" GridPane.rowIndex="0" minHeight="30.0" />
+
+        <Label text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="txtNombre" GridPane.columnIndex="1" GridPane.rowIndex="1" minHeight="30.0" />
+
+        <Label text="Correo electrónico:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="txtCorreo" GridPane.columnIndex="1" GridPane.rowIndex="2" minHeight="30.0" />
+
+        <Label text="Dirección de residencia:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="txtDireccion" GridPane.columnIndex="1" GridPane.rowIndex="3" minHeight="30.0" />
+
+        <Label text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <PasswordField fx:id="txtPassword" GridPane.columnIndex="1" GridPane.rowIndex="4" minHeight="30.0" />
+    </GridPane>
+
+    <Button text="Registrarse" onAction="#registrarse" minHeight="40.0" minWidth="130.0" style="-fx-background-color: #00807a; -fx-text-fill: white" />
+
+</VBox>
