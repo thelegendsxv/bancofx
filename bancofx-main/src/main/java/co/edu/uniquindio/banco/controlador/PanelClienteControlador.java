@@ -213,7 +213,7 @@ public class PanelClienteControlador {
         alerta.setContentText(mensaje);
 
         Stage stage = (Stage) alerta.getDialogPane().getScene().getWindow();
-        stage.getIcons().add(new Image(Objects.requireNonNull(BancoApp.class.getResourceAsStream("/img/S.png"))));
+        stage.getIcons().add(new Image(Objects.requireNonNull(BancoApp.class.getResourceAsStream("/img/logo.png"))));
 
         alerta.showAndWait();
     }

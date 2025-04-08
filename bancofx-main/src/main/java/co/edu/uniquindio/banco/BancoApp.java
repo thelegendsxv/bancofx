@@ -67,7 +67,7 @@ public class BancoApp extends Application {
         Parent parent = loader.load();
 
         Scene scene = new Scene(parent);
-        stage.getIcons().add(new Image(Objects.requireNonNull(BancoApp.class.getResourceAsStream("/img/S.png"))));
+        stage.getIcons().add(new Image(Objects.requireNonNull(BancoApp.class.getResourceAsStream("/img/logo.png"))));
         stage.setScene(scene);
         stage.setTitle("Banco");
         stage.setResizable(false);

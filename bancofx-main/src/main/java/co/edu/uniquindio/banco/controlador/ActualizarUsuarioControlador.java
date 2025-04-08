@@ -144,7 +144,7 @@ public class ActualizarUsuarioControlador {
         alert.setHeaderText(null);
         alert.setContentText(mensaje);
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
-        stage.getIcons().add(new Image(Objects.requireNonNull(BancoApp.class.getResourceAsStream("/img/S.png"))));
+        stage.getIcons().add(new Image(Objects.requireNonNull(BancoApp.class.getResourceAsStream("/img/logo.png"))));
         alert.showAndWait();
 
     }
