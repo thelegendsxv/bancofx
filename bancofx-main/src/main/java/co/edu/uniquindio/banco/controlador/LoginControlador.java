@@ -126,7 +126,7 @@ public class LoginControlador {
 
             Scene scene = new Scene(root);
             Stage stage = new Stage();
-            stage.getIcons().add(new Image(Objects.requireNonNull(BancoApp.class.getResourceAsStream("/img/S.png"))));
+            stage.getIcons().add(new Image(Objects.requireNonNull(BancoApp.class.getResourceAsStream("/img/logo.png"))));
             stage.setScene(scene);
             stage.setTitle(tituloVentana);
             stage.setResizable(false);

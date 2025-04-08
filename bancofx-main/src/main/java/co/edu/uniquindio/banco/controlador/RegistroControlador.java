@@ -129,7 +129,7 @@ public class RegistroControlador {
     public void crearAlerta(String mensaje, Alert.AlertType tipo) {
         Alert alert = new Alert(tipo);
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
-        stage.getIcons().add(new Image(Objects.requireNonNull(BancoApp.class.getResourceAsStream("/img/S.png"))));
+        stage.getIcons().add(new Image(Objects.requireNonNull(BancoApp.class.getResourceAsStream("/img/logo.png"))));
         alert.setTitle("Alerta");
         alert.setHeaderText(null);
         alert.setContentText(mensaje);

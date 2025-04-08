@@ -30,17 +30,17 @@ public class BancoApp extends Application {
      */
     private void cargarUsuarios() {
         try {
-            banco.registrarUsuario("2112", "Jose Bedoya", "Calle 01234", "jose@gmail.com", "1234");
-            banco.registrarUsuario("1221", "Alejo Mondragón", "Calle 56789", "alejo@gmail.com", "56789");
+            banco.registrarUsuario("1234", "Jose Bedoya", "Calle 01234", "jose@gmail.com", "1234");
+            banco.registrarUsuario("5678", "Alejo Mondragón", "Calle 56789", "alejo@gmail.com", "56789");
 
-            BilleteraVirtual billeteraJose = banco.buscarBilleteraUsuario("2112");
-            BilleteraVirtual billeteraMore = banco.buscarBilleteraUsuario("1221");
+            BilleteraVirtual billeteraJose = banco.buscarBilleteraUsuario("1234");
+            BilleteraVirtual billeteraMore = banco.buscarBilleteraUsuario("5678");
 
             String numeroJose = billeteraJose.getNumero();
             String numeroMore = billeteraMore.getNumero();
 
             banco.recargarBilletera(numeroJose, 5000);
-            banco.realizarTransferencia(numeroJose, numeroMore, 2127, Categoria.RECARGA);
+            banco.realizarTransferencia(numeroJose, numeroMore, 2200, Categoria.RECARGA);
 
             System.out.println("Saldo Jose: $" + billeteraJose.consultarSaldo());
             System.out.println("Saldo Alejo: $" + billeteraMore.consultarSaldo());
@@ -51,6 +51,7 @@ public class BancoApp extends Application {
             System.out.println("Error al registrar usuarios iniciales: " + e.getMessage());
         }
     }
+
 
     /**
      * Método que se ejecuta al iniciar la aplicación JavaFX.
