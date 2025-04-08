@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="center" prefHeight="462.0" prefWidth="415.0" spacing="15.0" style="-fx-background-color: #fdebd0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.banco.controlador.ActualizarUsuarioControlador">
+    <children>
+        <VBox alignment="CENTER" prefHeight="119.0" prefWidth="415.0" spacing="5.0">
+            <children>
+                <Label text="Actualizar Perfil" textAlignment="CENTER" textFill="#34495e">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <effect>
+                        <Glow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </Glow>
+                    </effect>
+                </Label>
+                <ImageView fitHeight="49.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/actualizar.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+            </children>
+        </VBox>
+        <GridPane alignment="CENTER" hgap="10.0" prefHeight="176.0" prefWidth="415.0" vgap="10.0">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Label text="Número de identificación:" textFill="#34495e" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <effect>
+                        <Glow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </Glow>
+                    </effect>
+                </Label>
+                <TextField fx:id="txtIdentificacion" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </TextField>
+                <Label text="Nombre:" textFill="#34495e" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <effect>
+                        <Glow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </Glow>
+                    </effect>
+                </Label>
+                <TextField fx:id="txtNombre" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </TextField>
+                <Label text="Correo electrónico:" textFill="#34495e" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    <effect>
+                        <Glow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </Glow>
+                    </effect>
+                </Label>
+                <TextField fx:id="txtCorreo" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </TextField>
+                <Label text="Dirección de residencia:" textFill="#34495e" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                    <effect>
+                        <Glow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </Glow>
+                    </effect>
+                </Label>
+                <TextField fx:id="txtDireccion" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </TextField>
+                <Label text="Contraseña:" textFill="#34495e" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                    <effect>
+                        <Glow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </Glow>
+                    </effect>
+                </Label>
+                <PasswordField fx:id="txtPassword" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </PasswordField>
+            </children>
+        </GridPane>
+        <Button fx:id="btnActualizar" minHeight="40.0" minWidth="130.0" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="Actualizar Perfil">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <effect>
+            <Glow>
+               <input>
+                  <DropShadow />
+               </input>
+            </Glow>
+            </effect>
+        </Button>
+    </children>
+</VBox>

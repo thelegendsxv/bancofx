@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="center" prefHeight="462.0" prefWidth="415.0" spacing="15.0" style="-fx-background-color: #fdebd0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.banco.controlador.RegistroControlador">
+    <children>
+        <VBox alignment="CENTER" prefHeight="133.0" prefWidth="415.0" spacing="5.0">
+            <children>
+                <Label prefHeight="88.0" prefWidth="197.0" text="Recargar Cuenta" textFill="#34495e">
+                    <effect>
+                        <Glow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </Glow>
+                    </effect>
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="77.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <image>
+                        <Image url="@img/recargarCuenta.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+        <GridPane alignment="CENTER" hgap="10.0" prefHeight="176.0" prefWidth="415.0" vgap="10.0">
+            <children>
+                <Label text="Número de Cuenta" textFill="#34495e" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <effect>
+                        <Glow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </Glow>
+                    </effect>
+                </Label>
+                <TextField fx:id="txtIdentificacion" minHeight="30.0" prefHeight="30.0" prefWidth="188.0" promptText="Ingrese su bumero de cuenta" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </TextField>
+                <Label text="Valor" textFill="#34495e" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <effect>
+                        <Glow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </Glow>
+                    </effect>
+                </Label>
+                <TextField fx:id="txtNombre" minHeight="30.0" promptText="Ingrese su valor" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </TextField>
+            </children>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+        <Button minHeight="40.0" minWidth="130.0" onAction="#recargar" prefHeight="57.0" prefWidth="143.0" style="-fx-background-color: #34495e; -fx-text-fill: white;" text="Recargar">
+            <effect>
+                <Glow>
+                    <input>
+                        <DropShadow />
+                    </input>
+                </Glow>
+            </effect>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</VBox>

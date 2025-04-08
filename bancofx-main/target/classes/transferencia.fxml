@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="center" prefHeight="368.0" prefWidth="428.0" spacing="15.0" style="-fx-background-color: #fdebd0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.banco.controlador.TransferenciaControlador">
+   <Label text="Realizar Transferencia" textFill="#34495e">
+      <font>
+         <Font size="24.0" />
+      </font>
+      <effect>
+         <Glow>
+            <input>
+               <DropShadow />
+            </input></Glow>
+      </effect>
+   </Label>
+   <ImageView fitHeight="46.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@img/transferencia.png" />
+      </image>
+   </ImageView>
+   <GridPane hgap="15.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="327.0" vgap="20.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="154.0" prefWidth="187.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="182.0" prefWidth="191.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="25.0" minHeight="12.0" prefHeight="25.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <Label text="Número de cuenta:" textFill="#34495e">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label text="Monto a tranferir:" textFill="#34495e" GridPane.rowIndex="1">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label text="Categoria:" textFill="#34495e" GridPane.rowIndex="2">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <TextField fx:id="NumeroCuentafield" promptText="Ingrese el numero de cuenta" GridPane.columnIndex="1" />
+      <TextField fx:id="MontoTransferirField" prefHeight="27.0" prefWidth="180.0" promptText="Ingrese el monto" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <ComboBox fx:id="CategoriaBox" prefHeight="18.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   </GridPane>
+   <Button fx:id="TransferirButton" mnemonicParsing="false" style="-fx-background-color: #34495e;" text="Transferir" textFill="WHITE">
+      <font>
+         <Font size="14.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect></Button>
+</VBox>
