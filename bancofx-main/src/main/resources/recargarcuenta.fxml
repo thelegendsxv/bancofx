@@ -50,7 +50,7 @@
                         </Glow>
                     </effect>
                 </Label>
-                <TextField fx:id="txtIdentificacion" minHeight="30.0" prefHeight="30.0" prefWidth="188.0" promptText="Ingrese su bumero de cuenta" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <TextField fx:id="txtIdentificacion" minHeight="30.0" prefHeight="30.0" prefWidth="188.0" promptText="Ingrese su número de cuenta" GridPane.columnIndex="1" GridPane.rowIndex="0">
                     <effect>
                         <DropShadow />
                     </effect>
