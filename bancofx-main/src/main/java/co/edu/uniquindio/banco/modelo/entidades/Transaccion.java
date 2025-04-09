@@ -17,6 +17,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Getter
 @Setter
+
 public class Transaccion {
     private TipoTransaccion tipoTransaccion;
     private String id;
@@ -26,4 +27,15 @@ public class Transaccion {
     private BilleteraVirtual billeteraOrigen, billeteraDestino;
     private float comision;
 
+    @Override
+    public String toString() {
+        return "Transaccion{" +
+                "tipoTransaccion=" + tipoTransaccion +
+                ", id='" + id + '\'' +
+                ", monto=" + monto +
+                ", fecha=" + fecha +
+                ", tipo=" + tipo +
+                ", comision=" + comision +
+                '}';
+    }
 }

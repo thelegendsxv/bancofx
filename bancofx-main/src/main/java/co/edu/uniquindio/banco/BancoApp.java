@@ -42,6 +42,8 @@ public class BancoApp extends Application {
             banco.recargarBilletera(numeroJose, 5000);
             banco.realizarTransferencia(numeroJose, numeroMore, 2200, Categoria.RECARGA);
 
+            System.out.println(banco.obtenerTransacciones(numeroMore));
+
             System.out.println("Saldo Jose: $" + billeteraJose.consultarSaldo());
             System.out.println("Saldo Alejo: $" + billeteraMore.consultarSaldo());
             System.out.println(numeroJose);

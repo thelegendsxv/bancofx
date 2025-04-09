@@ -50,23 +50,7 @@ public class RecargarCuenta {
         }
 
         try {
-            BilleteraVirtual billetera = banco.buscarBilletera(numeroCuenta);
-            if (billetera == null) {
-                throw new Exception("La billetera no existe.");
-            }
-
-            Transaccion transaccion = new Transaccion(
-                    TipoTransaccion.ENTRADA,
-                    UUID.randomUUID().toString(),
-                    valor,
-                    LocalDateTime.now(),
-                    Categoria.RECARGA,
-                    billetera,
-                    billetera,
-                    0
-            );
-
-            billetera.depositar(valor, transaccion);
+            banco.recargarBilletera(numeroCuenta, valor);
 
             mostrarAlerta(Alert.AlertType.INFORMATION, "Éxito", "Cuenta recargada correctamente.");
             limpiarCampos();

@@ -149,7 +149,7 @@ public class Banco {
         if (billetera == null) throw new Exception("La billetera no existe");
 
         Transaccion transaccion = new Transaccion(
-                TipoTransaccion.ENTRADA,
+                TipoTransaccion.DEPOSITO,
                 UUID.randomUUID().toString(),
                 monto,
                 LocalDateTime.now(),
@@ -168,8 +168,8 @@ public class Banco {
         if (billeteraOrigen == null || billeteraDestino == null) throw new Exception("La billetera no existe");
         if (!billeteraOrigen.tieneSaldo(monto)) throw new Exception("Saldo insuficiente");
 
-        Transaccion salida = new Transaccion(TipoTransaccion.SALIDA, UUID.randomUUID().toString(), monto, LocalDateTime.now(), categoria, billeteraOrigen, billeteraDestino, Constantes.COMISION);
-        Transaccion entrada = new Transaccion(TipoTransaccion.ENTRADA, UUID.randomUUID().toString(), monto, LocalDateTime.now(), categoria, billeteraOrigen, billeteraDestino, Constantes.COMISION);
+        Transaccion salida = new Transaccion(TipoTransaccion.RETIRO, UUID.randomUUID().toString(), monto, LocalDateTime.now(), categoria, billeteraOrigen, billeteraDestino, Constantes.COMISION);
+        Transaccion entrada = new Transaccion(TipoTransaccion.DEPOSITO, UUID.randomUUID().toString(), monto, LocalDateTime.now(), categoria, billeteraOrigen, billeteraDestino, Constantes.COMISION);
 
         billeteraOrigen.retirar(monto, salida);
         billeteraDestino.depositar(monto, entrada);
