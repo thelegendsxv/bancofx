@@ -219,7 +219,7 @@ public class PanelClienteControlador {
     }
 
     /**
-     * Cierra la ventana actual del panel cliente.
+     * Cierra la ventana actual del panel cliente..
      */
     private void cerrarVentanaActual() {
         Stage ventanaActual = (Stage) btnTransferir.getScene().getWindow();
