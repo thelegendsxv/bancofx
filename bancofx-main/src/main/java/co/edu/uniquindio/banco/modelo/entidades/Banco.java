@@ -160,7 +160,7 @@ public class Banco {
         );
         billetera.depositar(monto, transaccion);
     }
-
+//realizar transferencia
     public void realizarTransferencia(String numeroBilleteraOrigen, String numeroBilleteraDestino, float monto, Categoria categoria) throws Exception {
         BilleteraVirtual billeteraOrigen = buscarBilletera(numeroBilleteraOrigen);
         BilleteraVirtual billeteraDestino = buscarBilletera(numeroBilleteraDestino);
