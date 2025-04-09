@@ -201,7 +201,7 @@ public class PanelClienteControlador {
         }
     }
 
-    /**
+    /***
      * Muestra una alerta con un mensaje y tipo determinado.
      * @param mensaje Texto a mostrar.
      * @param tipo Tipo de alerta.
