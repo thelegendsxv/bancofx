@@ -62,7 +62,7 @@
                         </Glow>
                     </effect>
                 </Label>
-                <TextField fx:id="txtIdentificacion" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <TextField fx:id="txtIdentificacion" minHeight="30.0" promptText="Ingrese su ID" GridPane.columnIndex="1" GridPane.rowIndex="0">
                     <effect>
                         <DropShadow />
                     </effect>
@@ -76,7 +76,7 @@
                         </Glow>
                     </effect>
                 </Label>
-                <TextField fx:id="txtNombre" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <TextField fx:id="txtNombre" minHeight="30.0" promptText="Ingrese su nombre" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <effect>
                         <DropShadow />
                     </effect>
@@ -90,7 +90,7 @@
                         </Glow>
                     </effect>
                 </Label>
-                <TextField fx:id="txtCorreo" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <TextField fx:id="txtCorreo" minHeight="30.0" promptText="Ingrese su correo" GridPane.columnIndex="1" GridPane.rowIndex="2">
                     <effect>
                         <DropShadow />
                     </effect>
@@ -104,7 +104,7 @@
                         </Glow>
                     </effect>
                 </Label>
-                <TextField fx:id="txtDireccion" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                <TextField fx:id="txtDireccion" minHeight="30.0" promptText="Ingrese su dirección" GridPane.columnIndex="1" GridPane.rowIndex="3">
                     <effect>
                         <DropShadow />
                     </effect>
@@ -118,7 +118,7 @@
                         </Glow>
                     </effect>
                 </Label>
-                <PasswordField fx:id="txtPassword" minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                <PasswordField fx:id="txtPassword" minHeight="30.0" promptText="Ingrese su contraseña" GridPane.columnIndex="1" GridPane.rowIndex="4">
                     <effect>
                         <DropShadow />
                     </effect>
