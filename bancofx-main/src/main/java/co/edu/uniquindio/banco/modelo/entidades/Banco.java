@@ -49,11 +49,11 @@ public class Banco {
     /**
      * Registra un nuevo usuario con una billetera inicial.
      *
-     * @param id         Identificación del usuario
-     * @param nombre     Nombre completo
-     * @param direccion  Dirección física
-     * @param email      Correo electrónico
-     * @param password   Contraseña
+     * @param id        Identificación del usuario
+     * @param nombre    Nombre completo
+     * @param direccion Dirección física
+     * @param email     Correo electrónico
+     * @param password  Contraseña
      * @throws Exception si los datos son inválidos o el usuario ya existe
      */
     public void registrarUsuario(String id, String nombre, String direccion, String email, String password) throws Exception {
@@ -160,7 +160,8 @@ public class Banco {
         );
         billetera.depositar(monto, transaccion);
     }
-//realizar transferencia
+
+    //realizar transferencia
     public void realizarTransferencia(String numeroBilleteraOrigen, String numeroBilleteraDestino, float monto, Categoria categoria) throws Exception {
         BilleteraVirtual billeteraOrigen = buscarBilletera(numeroBilleteraOrigen);
         BilleteraVirtual billeteraDestino = buscarBilletera(numeroBilleteraDestino);
