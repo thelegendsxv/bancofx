@@ -64,7 +64,7 @@
          </effect></Label>
       <TextField fx:id="NumeroCuentafield" promptText="Ingrese el numero de cuenta" GridPane.columnIndex="1" />
       <TextField fx:id="MontoTransferirField" prefHeight="27.0" prefWidth="180.0" promptText="Ingrese el monto" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <ComboBox fx:id="CategoriaBox" editable="true" prefHeight="18.0" prefWidth="182.0" promptText="Escoja su categoría" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ComboBox fx:id="CategoriaBox" prefHeight="18.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </GridPane>
    <Button fx:id="TransferirButton" mnemonicParsing="false" style="-fx-background-color: #34495e;" text="Transferir" textFill="WHITE">
       <font>
