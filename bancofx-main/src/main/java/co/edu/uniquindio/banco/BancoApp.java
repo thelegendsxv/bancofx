@@ -31,7 +31,7 @@ public class BancoApp extends Application {
     private void cargarUsuarios() {
         try {
             banco.registrarUsuario("1234", "Jose Bedoya", "Calle 01234", "jose@gmail.com", "1234");
-            banco.registrarUsuario("5678", "Alejo Mondragón", "Calle 56789", "alejo@gmail.com", "56789");
+            banco.registrarUsuario("5678", "Alejo Mondragón", "Calle 56789", "alejo@gmail.com", "5678");
 
             BilleteraVirtual billeteraJose = banco.buscarBilleteraUsuario("1234");
             BilleteraVirtual billeteraMore = banco.buscarBilleteraUsuario("5678");
